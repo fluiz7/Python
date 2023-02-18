@@ -1,2 +1,2 @@
 # Python
- Curso de Python do Gustavo Guanabara.
+ Conclusão do Curso de Python do Gustavo Guanabara.
