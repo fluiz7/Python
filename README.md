@@ -1,2 +1,2 @@
 # Python
- União entre exercícios pela internet e aulas de python na faculdade.
+ Um compilado de alguns aprendizados e práticas feitas ao passar do tempo.
