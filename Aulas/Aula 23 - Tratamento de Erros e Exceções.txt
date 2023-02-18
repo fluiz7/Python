@@ -1,0 +1,41 @@
+### Tratamento de Erros e Exceções ###
+
+Lembre-se sempre que errar é normal e somente assim será possível seguir em frente.
+
+Um erro em que há alguma letra em um lugar que não deveria, por exemplo, chamamos de erro de sintaxe.
+Se eu esquecer de declarar uma variável, por exemplo, teremos um erro de significado, um erro semântico.
+
+----#####-------
+Quando o erro não ocorre de maneira sintática, não chamamos de erro, chamamos de exceção. Ao não declarar a variável, por exemplo, teremos a exceção chamada "NameError".
+
+Outro exemplo seria a de tentar converter um input para int, mas digitar uma string ao invés de número. Tendo em vista que não é possível fazer essa conversão, retornará uma exceção 'ValueError'.
+
+Há outros exemplos como 'TypeError', 'ZeroDivisionError', 'IndexError'...
+
+Todos fazem parte de uma classe maior chamada "Exception".
+
+----------------------------------
+Uma maneira de testar uma função e obter uma exceção no caso de ocorrer uma falha para que possamos tratá-la é da seguinte maneira.
+
+try:
+   operação
+except:
+   falhou 
+else:
+   deu certo
+finally:
+   certo ou falha
+
+As classes else e finally são opcionais, então nem sempre precisaremos usá-las.
+O finally ocorrerá de qualquer maneira.
+
+O try pode ter vários excepts e ainda especificar qual o erro da exceção para que haja um retorno baseado nele:
+
+try:
+	operação
+except TypeError:
+	falhou
+except ValueError:
+	falhou
+except OSError:
+	falhou

@@ -1,0 +1,55 @@
+Funções estão ligadas a uma rotina.
+Que coisas fazemos constantemente no python?
+print(), len(), input(), int(), float()...
+
+São funções que usamos sem saber e já vem instalada no python.
+
+def = definição de função, logo é igual a função que também pode ser vista como uma rotina personalizável.
+
+Por mais que a função criada esteja acima, ela não será executada primeira, mas somente quando eu solicitar chamando a função. As funções precisam terminar com parênteses ao fim.
+
+def mostraLinha():
+	print('------------------------------------')
+mostraLinha()
+print('         SISTEMA DE ALUNOS         ')
+mostraLinha()
+mostraLinha()
+print('      CADASTRO DE FUNCIONÁRIOS       ')
+mostraLinha()
+mostraLinha()
+print('          ERRO DE SISTEMA          ')
+mostraLinha()
+
+DEVE HAVER DUAS LINHAS VAZIAS ENTRE O DEF E O PROGRAMA PRINCIPAL!
+
+Além de comandos, também é possível usar parâmetros em defs.
+
+def mensagem(msg):
+print('------------------------------------')
+print(msg)
+print('------------------------------------')
+
+
+mensagem('SISTEMA DE ALUNOS')
+Isso fará com a que o parâmetro msg receba a mensagem do Sistema que for definida.
+
+def titulo(txt):
+	print('------------------------------------')
+	print(txt)
+	print('------------------------------------')
+
+titulo('    CURSO EM VÍDEO     ')
+
+
+########
+Importante lembrar de destacar o início do programa com um comentário
+
+
+-------------------------------
+Empacotar Parâmetros!!
+
+Caso vá usar parâmetros indefinidos, podemos usar o * e nome na função, assim quando chamarmos, o pacote terá todos os termos que colocarmos.
+
+
+----------------------------------
+Podemos usar funções inclusive para dobrar cada valor de uma lista, por exemplo, que já é mutável.

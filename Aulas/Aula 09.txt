@@ -1,0 +1,67 @@
+# Manipulando Caracteres / Cadeias de Texto
+
+'Curso em Vídeo Python' - Invés de chamarmos isso de Frase, chamaremos de String - Cadeias...
+
+*frase = 'Curso em Vídeo Python'*
+
+O python criará vários mini-espaços/índices pra comportar todos os caracteres na memória.
+
+# Fatiamento - Pegar pedaços
+
+frase[9] = V - O Python diferencia maiúsculo para minúsculo.
+frase[9:13] - Ele vai pegar do 9 ao 12, porque exclui o 13. Sendo Víde. Ele sempre pegará 1 a menos no final. O último valor não entra na contagem. 
+frase[9:21] - Assim ele irá até o 20 (Último)
+frase[9:21:2] - Começar no 9 e parar no 20 pulando de 2 em 2.
+frase[:5] - Começará antes dos dois pontos e já que está omitido, ele começará do início até o 4. [:5] igual a [0:5];
+frase[15:] - Indica que quero do 15 até o final. 
+frase[9::3] - Vai do 9 até o final de 3 em 3.
+
+# Análise
+
+Conseguir algumas informações da String.
+
+len = lengh = comprimento.
+len(frase) = 21 Caracteres.
+
+frase.count('o') = 3 - Contar quantas vezes aparece o 'o' minúsculo.
+frase.count('o', 0, 13) = 1 - Entre 0 e 12 - Ele fará a contagem e fatiamento simultâneamente.
+
+frase.find('deo) = Começou em 11 - Encontrar 'deo' dentro da string.
+frase.find('Android') = -1 = False = Não foi encontrado
+'Curso' in frase = True - Existe a palavra 'Curso' dentro de frase?
+
+# Transformação
+
+Geralmente uma String é imutável, mas dá pra mudar ela através de métodos, embora não mude diretamente os elementos.
+
+frase.replace('Pyhton', 'Android') - Onde estiver Python, ele substituirá por Android e adicionará uma letra.
+frase.upper() - Colocará em maiúsculo o que está em minúsculo. 
+frase.lower() - Colocará em minúsculo o que está em maiúsculo.
+frase.capitalize() - Coloca todos os caracteres em minúsculo e joga a primeira letra pra maiúsculo.
+frase.title() - Analisará quantas palavras tem na string e fará o Capitalize palavra por palavra.
+
+** Importante ter o parênteses após o método **
+
+*frase = '   Aprenda Python  '*
+
+frase.strip() - Removerá todos os espaços inúteis no começo e no fim da string. 
+frase.rstrip() - r = right = direita - Removerá só os últimos espaços da direita.
+frase. lstrip() - l = left = esquerda - Removerá só os primeiros espaços da esqueda.
+
+*frase = 'Curso em Vídeo Python'*
+
+# Divisão
+
+frase.split() - Tem funcionalidades a mais que deixar o parênteses vazio - EXERCÍCIO
+Considerará os espaços e dividirá criando palavras com os caracteres existentes. Vai gerar uma lista com todas as palavras de uma cadeia de caracteres e essas palavras vão ter uma numeração.
+
+Curso = 1
+em = 2
+Vídeo = 3
+Python = 4
+
+*frase = ['Curso', 'em', 'Vídeo', 'Python']*
+
+# Junção
+
+'-'.join(frase) = Juntará todos os elementos de frase (1,2,3,4) e usará o separador '-' entre as palavras.

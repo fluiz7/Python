@@ -1,0 +1,37 @@
+carro.siga()
+- Onde carro é o objeto e siga() é o método e, como método, é obrigatório que ele tenha parênteses.
+carro.esquerda()
+carro.siga()
+carro.direita()
+carro.siga()
+carro.direita
+carro.siga()
+carro.esquerda()
+carro.siga()
+carro.pare()
+
+# São sequenciais e precisam seguir essa ordem para que funcione perfeitamente. Chamamos de *estrutura sequencial*.
+
+Condições trazem possibilidades e desvios, fazendo com o que o programa não seja mais meramente executado de cima pra baixo. Ou acontecerá uma coisa, ou acontecerá outra, dependendo do caminho que seguir. Teremos um bloco de comandos. 
+A maioria dos programas dependem de condições e elas precisam de indentação.
+
+*Bloco verdadeiro* se a condição for aceita.
+
+se carro.esquerdo():	
+	bloco_V_
+senão
+	bloco_F_
+                     
+# Primeira representação de uma estrutura condicional. Ele sempre fará um ou outro bloco, mas nunca os dois.
+
+if carro.esquerdo():
+	bloco True
+else:
+	bloco False
+
+# Todo programa que está colado no lado esquerdo da indentação, ou será executado sempore, ou pode ou não ser executado a depender das condições.
+
+#Condição Simplificada
+Podemos escrever tudo numa linha só, caso seja algo simples. 
+
+Quando não tem o 'Else' é uma condição estrutural simples e quando o tem, é uma estrutura composta.

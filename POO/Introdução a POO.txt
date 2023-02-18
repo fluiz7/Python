@@ -1,0 +1,27 @@
+Tem como objetivo aproximar o mundo digital do mundo real.
+A programação modular levou a POO após pouco tempo.
+
+Qualquer objeto pode ser usado para explicar a Orientação a Objetos.
+
+Uma linguagem POO permite que eu não precise criar comando por comando de uma tarefa específica, pois eu posso separá-lo como um objeto e então criar métodos e dar atributos para aquilo que quero.
+
+VANTAGENS#####
+
+COMERNada
+Confiável!
+O isolamento entre as diferentes partes gera um software seguro. Eu posso mexer em uma sem que altere a outra.
+
+Oportuno
+Ao dividir tudo em partes, é possível desenvolver cada uma separadamente ou até em paralelo, não necessariamente tudo junto.
+
+Manutenível
+É mais fácil de atualizar e ao aprimorar uma parte, ela também irá beneficar as demais.
+
+Extensível
+O software deve crescer para permanecer útil, não é estático. É possível adicionar coisas novas sem ter que refazer tudo.
+
+Reutilizável
+Podemos usar objetos de um sistema que criamos em outro sistema.
+
+Natural
+Uma coisa natural é mais fácil de entender, pois você se preocupa mais com a funcionalidade do que com os detalhes da implementação.

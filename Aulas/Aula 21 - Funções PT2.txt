@@ -1,0 +1,69 @@
+### Interactive Helps ###
+
+Ajuda interativa! Podemos usá-la em python através da função interna: help()
+Ao chamar essa função no console interativo do python, entramos numa função em que permite ler o manual do que quisermos digitar. Por exemplo, ao digitarmos print, ele nos mostrará o manual de tudo que a função possui e o significado de cada uma delas.
+
+Pra sair é preciso digitar o comando quit
+Também é possível fazer dentro do programa principal: help(print)
+
+Outra forma que podemos utilizar para ver as funcionalidas internas de algo é o atributo doc, por exemplo: print(input.__doc__), assim ele mostrará o "manual" do input.
+
+Não necessariamente mostram as mesmas coisas.
+
+### docstrings ###
+
+São textos que usamos para descrever o manual de ajuda interativa de uma função. Assim que criamos uma função, devemos colocar três aspas duplas para representar o manual escrito da funcionalidade daquela função, explicando os parâmetros e pra que serve, por exemplo.
+
+def contador(i, f, p):
+	"""
+	-> Função para contar de um número até outro de tanto em tanto.
+	param i: inicio da contagem
+	param f: fim da contagem
+	param p: passo da contagem
+	Função feita por luiz felipe...	
+	"""
+	blablabla
+
+### Argumentos/Parâmetros Opcionais ###
+
+Se formos fazer uma função com um número limitado de parâmetros, podemos usar os parâmetro opcionais para o caso do usuário não digitar todos os valores necessários para que haja o funcionamento adequado.
+
+Para isso, bastar igualarmos os parâmetro da função da seguinte maneira:
+def somar(a=0, b=0, c=0):
+Assim, mesmo que nem todos os valores sejam informados, ainda será possível que a função funcione corretamente com a ausência de um ou todos eles.
+
+### Escopo de Variáveis ###
+
+Na programação, escopo é normalmente o local onde a variável vai existir e o local onde ela não vai mais existir.
+Podemos dizer que o escopo da variável é a região que ela funciona. Se uma variável funcionar no programa todo, por exemplo, ela seria uma variável de escopo global. Já no caso de uma variável funcionar somente dentro de uma função ou dentro do programa principal, aí ela estaria sendo somente uma variável de escopo local.
+
+Simplificando, toda variável que for definida dentro de uma função será uma de escopo local, então mesmo que se repita o nome de uma externa, ela não substitui no escopo global, mas cria uma no escopo local com mesmo nome para que funcione lá dentro.
+
+Para que se use e se altere a variável global dentro de uma função, devemos chamar o comando 'global' dentro da função e logo em seguida especificar o nome da variável, como por exemplo:
+-------------------------------------------------------------------------------
+def teste(b)
+	global a
+	a = 8
+a = 5
+teste(a)
+-------------------------------------------------------------------------------
+Assim o valor de a será alterado no programa todo.
+
+
+### Retorno de Resultados ###
+
+Ao usar o return, podemos criar resultados personalizados e não somente de uma maneira fixa.
+Quando usamos o return, o resultado da função pode ser guardado em uma variável ou até mesmo chamado num print, mas permite que você não tenha que seguir um padrão igual para todas as vezes que aquela função for chamada, pois o resultado será diferente e poderá ser usado de maneira diferente. 
+
+Exemplo:
+def somar(a=0, b=0, c=0):
+	s = a + b + c
+	return s
+
+r1 = somar(3, 2, 5)
+r2 = somar(2, 2)
+r3 = somar(6)
+
+print(f'Os resultados foram {r1}, {r2} e {r3}')
+
+Eu posso retornar qualquer tipo de valor em uma função.

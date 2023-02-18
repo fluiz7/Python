@@ -1,0 +1,27 @@
+O for precisa de um limite, precisa de um intervalo para que funcione, portanto, se não soubermos até onde terminará algo (incógnita), ele não será útil.
+
+Estrutura While
+
+"Enquanto" não chegar na maçã, dar um passo. 
+Chamamos isso de uma estrutura de repetição com testadores lógicos.
+
+enquanto não maçã
+  passo
+pega
+
+while not maçã:
+  passo
+pega
+
+--------------
+
+while not maçã:
+  if chão:
+    passo
+  elif buraco:
+    pular
+  elif moeda:
+    pegar
+pegar
+
+Quando houver um limite, o ideal é que usemos o FOR, porque é até mais fácil, mas quando não sabemos seu limite, devemos usar o WHILE.

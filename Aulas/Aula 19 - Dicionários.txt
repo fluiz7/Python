@@ -1,0 +1,48 @@
+# Váriaveis Compostas - Dicionários! #
+
+ Parecem com listas, mas os índices podem ser representados como literais, palavras no lugar de números, o que deixa mais organizado e compreensível.
+
+tuplas()
+listas[]
+dicionários{}
+
+Podemos representá-los de duas maneiras:
+dados = dict()
+dados = {'nome':'Pedro, 'idade':25}
+
+print(dados['nome']) Pedro
+print(dados['idade']) 25
+
+dados['sexo'] = 'M' -#- Ele vai criar o índice sexo e atribuir o valor 'M' ao final do dicionário.
+
+Para remover um pedaço no dicionário, usamos a função del: del dados['idade']
+
+---------------------
+filme = {'titulo':'Star Wars',
+	 'ano':1977,
+	 'diretor':'George Lucas'
+	}
+
+############
+#ITENS
+É a união dos valores de cima e de baixo, pega tudo dentro do dicionário.
+print(filme.items())
+
+#CHAVES
+As chaves são os valores de baixo, o que ficaria no lugar dos índices.
+print(filme.keys())
+
+#VALORES
+É a parte de cima, os elementos que atribui a uma chave/índice.
+print(filme.values())
+
+############
+
+for k, v in filme.items():
+	print(f'O {k} é {v}')
+Resultado:
+O título é Star Wars
+O ano é 1977
+O diretor é George Lucas
+
+Funciona parecido a um enumerate que usamos em tuplas e listas.

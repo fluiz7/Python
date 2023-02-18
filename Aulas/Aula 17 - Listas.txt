@@ -1,0 +1,31 @@
+Lembrando que a tupla vai armazenar a variável composta de  0 até o fim.
+
+## LISTAS ##
+Para usar Listas no lugar de tuplas, devemos usar colchonetes no lugar de parênteses.
+Diferente das tuplas, listas são mutáveis, então posso substituir um valor por outro depois.
+
+ADICIONAR 
+Para adicionar não basta colocar pra encontar um valor vazio, pois não funciona e dá erro. É necessário usar o comando .append() para adicionar algum valor ao fim da lista. 
+ex.: lanche.append('cookie')
+
+Já com a função .insert podemos inserir um valor entre quaisquer dois valores que quisermos numa lista.
+ex.: lanhce.insert(0, 'cookie')
+
+APAGAR
+Com del lanche[3] conseguimos eliminar o quarto elemento da lista.
+O mesmo vale para a função lanche.pop[3]. Normalmente elimina o último elemento, mas também pode ser usado um índice.
+
+Com o método .remove() nós não escolhemos o índice, mas sim o valor que queremos eliminar.
+ex.: lanche.remove('cookie')
+
+if 'pizza' in lanche:
+	lanche.remove('pizza')
+
+DECLARAR
+valores = list(range(4, 11))
+valores = [8, 2, 5, 4, 9, 3, 0]
+valores.sort() - Coloca em ordem crescente.
+valores.sort(reverse=True) - Coloca em ordem decrescente/reversa
+
+INSPECIONAR
+len(valores) - Tamanho da lista

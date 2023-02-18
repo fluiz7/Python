@@ -1,0 +1,26 @@
+dados = ['pedro', 25]
+dados1 = ['maria', 19]
+dados2 = ['jõao', 32]
+
+pessoas = list()
+pessoas.append(dados[:])
+
+O que foi feito acima é adicionar uma cópia do início até o final do fatiamento em dados dentro da lista pessoas. Não cria uma conexão direta entre elas. 
+
+Isso faz com que os dois elementos presentes na lista dados sejam comportados em apenas um espaço na lista pessoas. Dessa forma o espaço 0 de pessoas contém 'pedro' e 25; posso fazer isso repetidas vezes.
+
+pessoas.append(dados1[:])
+pessoas.append(dados2[:])
+
+Podemos montar toda uma estrutura dentro da primeira lista:
+pessoas = [['Pedro', 25], ['Maria', 19], ['Jõao', 32]]
+
+Conta como índice 0, 1 e 2.
+
+print(pessoas[0][0]) - Pedro
+print(pessoas[1][1]) - 19
+print(pessoas[2][0]) - Jõao
+
+Primeiro ele lê o índice e depois ele vê qual elemente aquela posição se refere dentro do índice.
+
+print(pessoas[1]) - ['Maria', 19]

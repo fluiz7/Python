@@ -1,0 +1,25 @@
+---- Iterações -----
+Normalmente temos o For, While e Repeat/Do While como laços de repetição nas linguagens, porém no Python só temos as duas primeiras, embora a terceira possa ser "feita".
+
+---------------------------
+
+O Stop desvia a execução para o lado de fora do laço, da repetição, interrompendo o loop.
+
+while True:
+	if bloco
+	  passo
+	if espaco
+	  pula
+	if moeda
+	  pega
+	if troféu
+	  pula
+	  break
+pega
+
+Quando encontra o break, ele joga pra fora do laço e encerra o código pegando o troféu.
+------------------
+
+Se usarmos While True: podemos fazer com que um loop eterno seja criado, sendo assim, o programa não irá parar. O comando break quebra um loop.
+
+Flag é o ponto de parada que sinaliza que acabou.

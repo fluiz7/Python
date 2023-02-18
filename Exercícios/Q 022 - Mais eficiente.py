@@ -1,0 +1,6 @@
+nome = str(input('Digite um nome completo: ')).strip()
+print('Olhando o seu nome...')
+print('Seu nome em maiúsculas é \033[1;37;40m{}\033[m.'.format(nome.upper()))
+print('Enquanto em minúsculas é \033[4;30;47m{}\033[m.'.format(nome.lower()))
+print('Seu nome tem ao todo \033[7;35m{}\033[m letras.'.format(len(nome) - nome.count(' ')))
+print('Já o primeiro nome possui \033[7;34m{}\033[m.'.format(nome.find(' ')))

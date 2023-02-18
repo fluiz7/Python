@@ -1,0 +1,42 @@
+### Módulos ###
+
+O principal foco da modularização é o de dividir códigos extensos em menores.
+Uso da modularização:
+
+- Surgiu na década de 60;
+- Sistemas estavam ficando cada vez maiores;
+- Foco: dividir um programa grande em menos;
+- Foco: aumentar a legibilidade do código;
+- Foco: facilitar a manutenção.
+
+Um ótimo exemplo é quando o código está ficando grande com muitas funções, por exemplo, então podemos pegar essas funções e adicioná-las a um arquivo separado, como uteis.py  . Assim muito peso visual é retirado do código e ele permanece funcionando.
+
+Como?
+Após criar outro arquivo py com somente as funções desejadas, podemos simplesmente usar o comando import no arquivo que vamos usá-las e chamar as funções que queremos do outro arquivo, assim como usamos os módulos que já vem com python, como time, math, datetime...
+
+Dentro do módulo tal, chamar uma função tal.
+
+# Vantagens #
+
+- Organização do código (problemas maiores em menores).
+
+- Facilidade na manutenção (basta acessar o arquivo de funções e alterar o que eu achar melhor).
+
+- Ocultação de código detalhado, pois não é necessário ficar vendo como aquilo funciona, apenas que funcione.
+
+- Reutilização em outros projetos (basta importar o código novamente).
+
+====================================================================================
+### Pacotes ###
+
+Quando já nem mesmo os módulos são capazes de satisfazer as necessidades do programa, há o surgimento do pacote para suprir essa necessidade. Módulos muito grandes/sobrecarregados.
+
+Também é chamado de biblioteca em algumas outras linguagens. 
+
+O pacote só deverá ser utilizado para quando o projeto, o programa, o sistema já estiver grande até demais, além do grande convencional. Nesse caso, deveremos criar um pacote para melhor organização.
+
+O pacote serve pra englobar outros pacotes ou módulos e ainda separar por assuntos, o que facilita muito a manutenção e a legibilidade do código.
+Para criarmos um pacotes, devemos criar uma pasta/diretório com o nome que desejamos e, então, criar outras pastas ou módulos dentro dela.
+
+=========IMPORTANTE==========
+Cada pasta criada dentro de um pacote precisa ter o arquivo __init__.py dentro dela, inclusive o próprio pacote pode ter uma e ela deve seguir essa descrição específica, não pode ser diferente. 

@@ -1,0 +1,23 @@
+Variáveis compostas em Python:
+- Tuplas
+- Listas
+- Dicionários
+
+---- Tuplas ----
+Variável simples é o que já vimos até agora. Eu declaro uma variável que guardará apenas uma informação na memória.
+As compostas podem guardar quantas informações quisermos. 
+
+# Os elementos são definidos por índices, começando em 0, assim poderemos selecionar o que acessar dentro da variável.
+
+print(lanche[2]) vai mostrar só a pizza
+print(lanche[0:2]) vai mostrar os dois primeiros e ignorar o terceiro
+len(lanche) == 4
+
+for c in lanche:
+  print(c)
+mostrará cada comida dentro de lanche, substituindo o c.
+
+O for também funciona para coleções e não somente range;
+
+###___ AS TUPLAS SÃO IMUTÁVEIS ___###
+Lembrar que o python ignorar o último elemento do fatiamento.

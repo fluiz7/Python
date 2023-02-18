@@ -1,0 +1,39 @@
+# Concentração!
+# Anote tudo!
+# Estude em grupo!
+# Ensine algúem!
+# Pratique muito!
+# Não pule exercícios!
+# Não copie respostas!
+# Não desista!
+
+/* Condições Aninhadas *\
+
+Aninhar trata-se de colocar uma dentro da outra.
+
+Às vezes precisamos de mais de duas opções para resolver algo, então não pode ser simplesmente verdadeiro ou falso.
+Devemos olhar a melhor hipótese, mas também as outras possibilidades, pois o caminho mais simples pode ficar engarrafado e os outros serem melhores naquelas condições.
+
+carro.siga()
+se carro.esqurda()
+	carro...
+senão se carro.direita()
+	carro...
+senão
+	carro.siga()
+carro.pare()
+
+# Condição aninhada simples	
+
+carro.siga()
+if carro.esquerda():
+	carro.siga()
+	carro.direita()
+	carro...
+elif carro.direita():
+	carro...
+else:
+	carro.siga()
+carro.pare()
+
+# Dentro de um if podemos usar quantos elif quiser e o else é opcional. Somente o if é obrigatório.

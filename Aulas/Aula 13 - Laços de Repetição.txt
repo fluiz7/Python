@@ -1,0 +1,48 @@
+Também é muito chamado de Iterações!
+
+# Laço de repetição - #
+Ir repetindo os comandos de passos no algoritmo pra chegar na maçã e parar depois.
+Começar com um laço no início da estrutura fará com que ele repita um comando para sempre.
+Para que não seja infinito, precisa impor um limite.
+Pra andar do quadrado 1 até o 10, por exemplo, usaremos um contador para que verifique isso e pare no passo final. Laço de repetição/iteração. Isso é um laço com variável de controle.
+
+# For e Range#
+
+laço c no intervalo (1,10)
+	passo
+pega #não faz parte do laço
+------------------------------
+
+for c in range(1, 10):
+	passo
+pega
+
+
+* caminho com buracos dessa vez *
+
+passo
+pula
+passo
+pula
+passo
+pula
+passo
+pega
+
+------------------------------
+for c in range (0,3):
+	passo
+	pula
+passo
+pega
+
+* caminho com buracos, moedas e a maçã * 
+# estrutura aninhada de controle condicional
+
+for c in range ():
+	if moeda:
+		pega
+	passo
+	pula
+passo
+pega

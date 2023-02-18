@@ -1,0 +1,10 @@
+### Módulos ###
+
+O principal foco da modularização é o de dividir códigos extensos em menores.
+Uso da modularização:
+
+- Surgiu na década de 60;
+- Sistemas estavam ficando cada vez maiores;
+- Foco: dividir um programa grande em menos;
+- Foco: aumentar a legibilidade do código;
+- Foco: facilitar a manutenção.
